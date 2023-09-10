@@ -1,0 +1,343 @@
+:root {
+    --primary-blue: #0000ff;
+    --neutral-blue: #b1c5ff;
+    --primary-orange: #ff764d;
+    --primary-violet: #d5b3ff;
+    --neutral-yellow: #fbffa7;
+    --neutral-green: #b6ffc0;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #181818;
+    background: #fff;
+    line-height: 1.4;
+    overflow-x: hidden;
+}
+
+.container {
+    margin: 0 7rem;
+}
+
+
+/* utilities styles */
+img {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: #181818;
+}
+
+.color-orange {
+    color: var(--primary-orange);
+}
+
+.color-blue {
+    color: var(--primary-blue);
+}
+
+/* logo */
+.logo {
+    font-size: 1.5rem;
+}
+
+.logo .second {
+    transform: rotate(90deg);
+}
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    color: #0000ff;
+    border: none;
+    font-weight: 500;
+    font-size: 1.65rem;
+    margin: 1rem 0;
+}
+
+/* text styles */
+.text-md {
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+.text-sm {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+/* header */
+.header-container {
+    padding: 1rem 2rem;
+
+}
+
+#main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    border-bottom: 2px solid #ddd;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+}
+
+#navbar a,
+.navbar-menu a {
+    margin: 0 1rem;
+}
+
+#info {
+    display: flex;
+    font-weight: 500;
+}
+
+#info .jobs {
+    margin-left: 1rem;
+}
+
+/* showcase */
+#main-image-showcase.showcase {
+    background: url('../img/showcase.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-image-showcase.showcase h1 {
+    font-size: 6rem;
+    font-weight: 500;
+}
+
+/* about product */
+.about-product {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5rem auto 6rem;
+    width: 50%;
+}
+
+.about-product .text-md {
+    margin-bottom: 1rem;
+}
+
+/* section img */
+.img-section {
+    position: relative;
+    margin-bottom: 10rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.bg-color-yellow {
+    position: absolute;
+    background: var(--neutral-yellow);
+    height: 80vh;
+    width: 65vw;
+    right: 0;
+}
+
+.left-img {
+    /* scale: 0.9; */
+    width: 35vw;
+    margin-left: 7rem;
+    margin-top: 2rem;
+    z-index: 1;
+}
+
+.right-img {
+    scale: 1;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+}
+
+/* third img section */
+.main-img-section img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 50vw;
+}
+
+/* section with greeb bg */
+.bg-color-green {
+    background: var(--neutral-green);
+    position: absolute;
+    height: 90vh;
+    width: 65vw;
+    left: 0;
+}
+
+.green-section .left-img img {
+    width: 70%;
+    margin: 2.75rem 0;
+}
+
+
+.green-section .left-img img:nth-of-type(2) {
+    margin-top: 0rem;
+}
+
+.green-section .right-img {
+    width: 45vw;
+}
+
+/* bg violet section */
+.bg-color-violet {
+    background: var(--primary-violet);
+    position: absolute;
+    height: 80vh;
+    width: 50vw;
+    left: 500px;
+    right: 50px;
+}
+
+.violet-section-flex .left-img img {
+    width: 80%;
+    margin-top: 10rem;
+}
+
+.violet-section-flex .right-img img {
+    width: 40vw;
+    margin-top: 10rem;
+}
+
+.last-text-sectiton {
+    padding: 5rem 0;
+}
+
+/* word section */
+.work {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 5rem;
+}
+
+.work img {
+    height: 100%;
+}
+
+.card-info-jobs {
+    background: var(--neutral-blue);
+}
+
+.card-info-jobs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem;
+}
+
+.card-info-jobs p {
+    font-size: 1.75rem;
+}
+
+/* footer */
+
+footer {
+    border-top: 2px solid #ddd;
+}
+
+.footer-container {
+    margin: 5rem 0 3rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.box ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.socials i {
+    display: flex;
+    flex-direction: row;
+}
+
+#form-input {
+    margin-top: 1rem;
+}
+
+#form-input input {
+    width: 80%;
+    background: #f4f4f4;
+    border: none;
+    padding: 0.7rem 0.5rem;
+}
+
+#form-input .btn-signup {
+    background: var(--primary-blue);
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0 3rem;
+}
+
+.footer-links li {
+    margin-left: 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.footer-links li:first-child {
+    margin-left: 0rem;
+}
+
+.footer-links .logo {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.footer-links p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-right: 0.5rem;
+}
