@@ -341,3 +341,165 @@ footer {
     font-weight: 500;
     margin-right: 0.5rem;
 }
+
+@media(max-width: 1600px) {
+    .bg-color-yellow {
+        height: 84vh;
+    }
+
+    .bg-color-green {
+        height: 98vh;
+    }
+
+    .bg-color-violet {
+        height: 100vh;
+
+    }
+
+    #form-input .btn-signup {
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width: 800px) {
+
+    /* text styles */
+    .text-md {
+        font-weight: 500;
+        font-size: 1.3rem;
+    }
+
+    .text-sm {
+        font-weight: 400;
+        font-size: 0.9rem;
+    }
+
+    /* logo */
+    .logo {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 0.8rem;
+        padding-bottom: 1rem;
+    }
+
+    /* header */
+    #main-header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        border-bottom: 2px solid #ddd;
+
+    }
+
+    #navbar {
+        display: block;
+        margin: 0.8rem 0;
+    }
+
+    #navbar a,
+    .navbar-menu a {
+        margin: 0 0.5rem;
+    }
+
+    #info {
+        text-align: center;
+        display: flex;
+        font-weight: 500;
+    }
+
+    #info .jobs {
+        text-align: center;
+        margin-left: 1rem;
+    }
+
+    /* showcase */
+    #main-image-showcase.showcase {
+        background: url('../img/showcase.jpg') no-repeat center center/cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 2rem;
+    }
+
+    .about-product {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 5rem auto 6rem;
+        width: 80%;
+    }
+
+    /* section img */
+    .img-section {
+        position: none;
+        margin-bottom: 10rem;
+    }
+
+    .flex {
+        display: block;
+    }
+
+    .bg-color-yellow {
+        position: none;
+        display: none;
+    }
+
+    .left-img {
+        display: none;
+    }
+
+    .right-img {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .img-section {
+        position: none;
+        margin-bottom: 1rem;
+    }
+
+    .main-img-section img {
+        display: inline-block;
+        width: 50vw;
+    }
+
+    /* section with greeb bg */
+    .bg-color-green {
+        display: none;
+    }
+
+    .bg-color-green img {
+        width: 100%;
+    }
+
+    .green-section .left-img img:nth-of-type(2) {
+        margin-top: 0rem;
+    }
+
+    .green-section .right-img {
+        width: 100vw;
+    }
+
+    /* bg violet section */
+    .bg-color-violet {
+        display: none;
+    }
+
+    .violet-section-flex .left-img img {
+        display: none;
+
+    }
+
+    .violet-section-flex .right-img img {
+        width: 100vw;
+    }
+
+    .work {
+        display: block;
+    }
+}
